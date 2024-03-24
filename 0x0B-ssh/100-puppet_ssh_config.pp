@@ -1,4 +1,5 @@
 #configure puppet  ssh config file
+include stdlib
 
 file_line { 'Turn off passwd auth':
 ensure => present,
