@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-queries the Reddit API for a given subreddit 
+queries the Reddit API for a given subreddit
 """
 import requests
 
