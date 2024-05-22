@@ -1,3 +1,5 @@
+
+![image](https://github.com/Ericacdev/alx-system_engineering-devops/assets/126167758/c1718f97-8d72-4276-863c-58c014853a06)
 **Postmortem: Web Stack Outage on May 3rd, 2024**
 
 **Issue Summary:**
@@ -23,6 +25,10 @@ Between the hour of 3:00 AM and 5:30 AM on May 3rd, 2024 (UTC), 30% of users enc
 **Corrective and Preventative Measures:**
 
 - **Improvements/Fixes:** Enhance monitoring to detect load balancer misconfigurations. Implement automated checks for load balancer settings.
+
+![image](https://github.com/Ericacdev/alx-system_engineering-devops/assets/126167758/ce273bf2-5ecd-4f95-937a-7f9806caae19)
+
+
 - **Tasks:**
   - Implement automated load balancer configuration checks by May 15th, 2024.
   - Conduct load testing scenarios to verify load balancer behavior under different traffic loads by June 1st, 2024.
