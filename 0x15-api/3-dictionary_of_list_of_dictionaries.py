@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Exports data of all employees to JSON format."""
+"""Exports data of all employees to JSON"""
 import json
 import requests
 
@@ -9,10 +9,10 @@ if __name__ == "__main__":
 
     with open("todo_all_employees.json", "w") as jsonfile:
         json.dump({
-            us.get("id"): [{
-                "task": to.get("title"),
-                "completed": to.get("completed"),
-                "username": user.get("username")
-                } for to in requests.get(url + "todos",
-                                         params={"userId": us.get("id")}).json()]
-                for us in users}, jsonfile)
+            a.get("id"): [{
+                "task": t.get("title"),
+                "completed": t.get("completed"),
+                "username": a.get("username")
+            } for t in requests.get(url + "todos",
+                                    params={"userId": a.get("id")}).json()]
+            for a in users}, jsonfile)
